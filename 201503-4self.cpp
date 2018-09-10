@@ -3,7 +3,7 @@
 using namespace std;
 
 vector<int> link[10001];
-bool marked[]
+bool marked[10001];
 
 struct P {
     int v;
