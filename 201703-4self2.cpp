@@ -14,7 +14,7 @@ struct Node {
         value = v;
     }
     Node(){}
-    operator < (const Node &node2) const{
+    bool operator < (const Node &node2) const{
         return value > node2.value;
     }
 };

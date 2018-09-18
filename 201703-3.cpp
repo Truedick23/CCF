@@ -1,14 +1,16 @@
 #include<iostream>
 #include<vector>
 #include<cstring>
+#include <string>
 #include<cstdlib>
+#include <stdlib.h>
 #include<cassert>
 
 using namespace std;
 
 string to_string(int i) {
     char buffer[10];
-    return string(itoa(i, buffer, 10));
+    return string(_itoa_s(i, buffer, 2, 10));
 }
 
 string parseEmphasize(string text) {
@@ -144,5 +146,5 @@ int main() {
         }
         line = "";
     }
-    cout << result;
+    cout << result << endl;
 }

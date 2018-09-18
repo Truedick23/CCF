@@ -11,7 +11,7 @@ struct Node {
     int dest;
     int value;
 
-    operator < (const Node &node2) const{
+    bool operator < (const Node &node2) const{
         return value > node2.value;
     }
 
@@ -73,7 +73,7 @@ int main() {
     }
     dijistra(1);
     for(int i = 2; i <= n; i++) {
-        cout << cost[i] << endl;
+        //cout << cost[i] << endl;
         totalcost += cost[i];
     }
     cout << totalcost << endl;

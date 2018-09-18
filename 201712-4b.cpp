@@ -1,4 +1,6 @@
 #include<iostream>
+#include <cmath>
+#include <algorithm>
 using namespace std;
 
 typedef long long ll;
@@ -86,6 +88,6 @@ int main() {
                     g0[i][j] = g0[i][k] + g0[k][j];
             }
     SPFA(1, n);
-    cout << min(dist0[n], dist[n]);
+    cout << std::min(dist0[n], dist[n]);
     return 0;
 }

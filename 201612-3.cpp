@@ -55,7 +55,7 @@ int privilegematch(_privilege& p1, _privilege& p2) {
         if(p1.level == NOVALUE)
             return TRUE;
         else
-            p1.level;
+            return p1.level;
     } else {
         if(p1.level == NOVALUE)
             return TRUE;
